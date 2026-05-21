@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Daniel Morón</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome (iconos de GitHub, LinkedIn, etc.) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- DevIcons: logos de tecnologías -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-estilo"> 
+  <div class="container">
+    
+    <!-- Nombre con un estilo especial -->
+    <a class="navbar-brand fw-bold" href="#">Daniel Morón</a>
+
+    <!-- Botón 3 rayas para enlaces del menú, que se muestre y se oculte -->
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span> <!-- Icono de las tres rayas -->
+    </button>
+
+    <!-- Enlaces del menú -->
+    <div class="collapse navbar-collapse" id="menu">
+    <ul class="navbar-nav ms-auto"> 
+        <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+        <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Sobre mi-->
+<section id="sobre-mi" class="d-flex align-items-center text-white sobre-mi-section">
+<div class="container text-center">
+    <img src="img/foto.jpg" 
+     alt="Daniel Morón" 
+     class="rounded-circle mb-4 foto-perfil"> <!-- Foto de perfil redonda -->
+     <h1 class="display-3 fw-bold">
+      Hola, soy <span class="texto-destacado">Daniel Morón</span>
+    </h1>
+
+    <p class="lead mt-3"> <!-- Párrafo destacado -->
+      Estudiante de DAW · JavaScript · SQL · Java · Bootstrap
+    </p>
+
+    <p class="text-secondary mt-2"> 
+      Apasionado por construir aplicaciones web limpias y funcionales.
+    </p>
+
+    <div class="mt-4">
+      <a href="#proyectos" class="btn btn-lg me-2 btn-color">Ver mis proyectos</a> 
+      <a href="#contacto" class="btn btn-outline-light btn-lg">Contactar</a>
+      <a href="cv.pdf" download class="btn btn-outline-light btn-lg">
+        <i class="fas fa-download me-2"></i>Descargar CV 
+      </a> <!-- Botón con un icono de descarga del currículum -->
+    </div>
+
+    <div class="mt-4">
+      <a href="https://github.com/danimoron7" target="_blank" class="text-white me-3 fs-3"> 
+        <i class="fab fa-github"></i> <!-- Icono de GitHub -->
+      </a>
+      <a href="https://www.linkedin.com/in/danielmoron7/" target="_blank" class="text-white fs-3">
+        <i class="fab fa-linkedin"></i> <!-- Icono de LinkedIn -->
+      </a>
+      
+    </div>
+  </div>
+</section>
+
+<!-- Proyectos -->
+<section id="proyectos" class="py-5 bg-light proyectos-section">
+  <div class="container">
+
+    <h2 class="text-center fw-bold mb-5">Proyectos Destacados</h2>
+
+    <div class="row g-4"> 
+
+      <!-- Proyecto 1 -->
+      <div class="col-12 col-md-6 col-lg-4"> <!-- Columna que ocupa toda la fila en móvil, la mitad en tablet y un tercio en escritorio -->
+        <div class="card h-100 shadow">
+          <img src="img/starwars.png" class ="card-img-top" alt="Proyecto Alianza Rebelde" style="height: 180px; object-fit: cover;">
+            <div class="card-body d-flex flex-column"> 
+              <h5 class="card-title fw-bold">Proyecto Alianza Rebelde</h5>
+              <p class="card-text text-muted">
+                App web con gestión de pilotos, naves y misiones. CRUD completo y estadísticas en tiempo real.
+              </p>
+            <div class="mb-3">
+              <span class="badge bg-warning text-dark me-1">JavaScript</span> 
+              <span class="badge bg-primary me-1">HTML</span> 
+              <span class="badge bg-info text-dark">CSS</span>
+            </div>
+            <a href="https://proyecto-star-wars-sandy.vercel.app/" 
+               target="_blank" 
+               class="btn btn-color mt-2">
+               <i class="fas fa-external-link-alt me-1"></i>Ver página
+            </a>
+            <a href="https://github.com/danimoron7/ProyectoStarWars" 
+               target="_blank" 
+               class="btn btn-dark mt-auto"> 
+              <i class="fab fa-github me-1"></i>Ver código
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyecto 2 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 shadow">
+          <img src="img/festival.png" class ="card-img-top" alt="Festival Naciones" style="height: 180px; object-fit: cover;">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Festival Naciones</h5>
+              <p class="card-text text-muted">
+                Web multipage de un festival de naciones con secciones de conciertos, gastronomía, actividades y participantes.
+              </p>
+            <div class="mb-3">
+              <span class="badge bg-primary me-1">HTML</span> 
+              <span class="badge bg-info text-dark me-1">CSS</span> 
+              <span class="badge bg-warning text-dark">JavaScript</span>
+            </div>
+            <a href="https://festivalnaciones.vercel.app" 
+               target="_blank" 
+               class="btn btn-color mt-2">
+               <i class="fas fa-external-link-alt me-1"></i>Ver página
+            </a>
+            <a href="https://github.com/danimoron7/festivalnaciones" 
+               target="_blank" 
+               class="btn btn-dark mt-auto">
+              <i class="fab fa-github me-1"></i>Ver código
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyecto 3 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 shadow">
+          <img src="img/streaming.png" class ="card-img-top" alt="Modelado de Base de Datos" style="height: 180px; object-fit: cover;">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Plataforma Streaming</h5>
+              <p class="card-text text-muted">
+                  Modelado de base de datos. Diseño E/R, normalización, paso a tablas e inserts.
+              </p>
+            <div class="mb-3">
+              <span class="badge bg-danger me-1">Oracle DB</span>
+              <span class="badge bg-success me-1">MySQL</span>
+            </div>
+            <a href="https://github.com/danimoron7/solucion_ejercicio_streaming" 
+               target="_blank" 
+               class="btn btn-dark mt-auto">
+              <i class="fab fa-github me-1"></i>Ver código
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HABILIDADES -->
+<section id="habilidades" class="py-5 habilidades-section"> <!-- Sección con padding vertical -->
+  <div class="container">
+
+    <h2 class="text-center fw-bold mb-5">Habilidades Técnicas</h2>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- Lenguajes -->
+      <div class="col-12 col-md-6 col-lg-3"> 
+        <div class="card h-100 shadow-sm text-center p-3"> 
+          <div class="card-body"> 
+            <h5 class="card-title fw-bold mb-4">Lenguajes</h5>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+              <div class="d-flex flex-column align-items-center">
+                <i class="devicon-javascript-plain colored" style="font-size: 2.5rem;"></i>
+                <p class="text-muted mt-1">JavaScript</p>
+              </div>
+
+              <div class="d-flex flex-column align-items-center">
+                <i class="devicon-html5-plain colored" style="font-size: 2.5rem;"></i>
+                <p class="text-muted mt-1">HTML5</p>
+              </div>
+
+              <div class="d-flex flex-column align-items-center">
+                <i class="devicon-css3-plain colored" style="font-size: 2.5rem;"></i>
+                <p class="text-muted mt-1">CSS3</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Frameworks -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm text-center p-3">
+          <div class="card-body">
+            <h5 class="card-title fw-bold mb-4">Frameworks</h5>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+
+              <div class="d-flex flex-column align-items-center">
+                <i class="devicon-bootstrap-plain colored" style="font-size: 2.5rem;"></i>
+                <p class="text-muted mt-1">Bootstrap</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bases de datos -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm text-center p-3">
+          <div class="card-body">
+            <h5 class="card-title fw-bold mb-4">Bases de Datos</h5>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+
+              <div class="d-flex flex-column align-items-center">
+                <i class="devicon-oracle-original colored" style="font-size: 2.5rem;"></i>
+                <p class="text-muted mt-1">Oracle DB</p>
+              </div>
+
+              <div class="d-flex flex-column align-items-center">
+                <i class="devicon-mysql-plain colored" style="font-size: 2.5rem;"></i>
+                <p class="text-muted mt-1">MySQL</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Herramientas -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm text-center p-3">
+          <div class="card-body">
+            <h5 class="card-title fw-bold mb-4">Herramientas</h5>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+
+              <div class="d-flex flex-column align-items-center">
+                <i class="devicon-git-plain colored" style="font-size: 2.5rem;"></i>
+                <p class="text-muted mt-1">Git</p>
+              </div>
+
+              <div class="d-flex flex-column align-items-center">
+                <i class="devicon-github-original" style="font-size: 2.5rem;"></i>
+                <p class="text-muted mt-1">GitHub</p>
+              </div>
+
+              <div class="d-flex flex-column align-items-center">
+                <i class="devicon-vscode-plain colored" style="font-size: 2.5rem;"></i>
+                <p class="text-muted mt-1">VS Code</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="py-5 contacto-section">
+  <div class="container"> 
+
+    <h2 class="text-center fw-bold text-white mb-5">Contacto</h2> 
+
+    <div class="row justify-content-center"> 
+      <div class="col-12 col-md-8 col-lg-6">
+        <!-- Tarjeta del formulario -->
+        <div class="card shadow p-4"> 
+          <div class="card-body text-center">
+          <i class="fas fa-envelope fs-1 icono-correo mb-3"></i> <!-- Icono de correo -->
+          <h5 class="fw-bold mb-2">¿Tienes algún proyecto en mente?</h5> 
+          <p class="text-muted mb-4">Ponme en contacto y hablemos.</p>
+
+          <a href="mailto:danimoron53@gmail.com" class="btn btn-color w-100 fw-bold">
+            <i class="fas fa-paper-plane me-2"></i>Enviarme un correo <!-- Icono de avión de papel -->
+          </a>
+
+      </div>
+    </div>
+
+        <!-- Redes sociales debajo del formulario -->
+        <div class="text-center mt-4">
+          <p class="text-secondary">O encuéntrame en:</p>
+          <a href="https://github.com/danimoron7" target="_blank" class="text-white me-4 fs-3"> <!-- Enlace a GitHub con margen a la derecha y tamaño de fuente grande -->
+            <i class="fab fa-github"></i> 
+          </a>
+          <a href="https://www.linkedin.com/in/danielmoron7/" target="_blank" class="text-white fs-3"> <!-- Enlace a LinkedIn con tamaño de fuente grande -->
+            <i class="fab fa-linkedin"></i> 
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-3 text-center text-secondary footer-section"> 
+  <p>© 2026 Daniel Morón</p>
+</footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
