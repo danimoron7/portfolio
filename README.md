@@ -14,5 +14,5 @@ Portfolio personal desarrollado con HTML, CSS y Bootstrap 5.
 - Habilidades técnicas
 - Contacto
 
-## Demo
+## Enlace
 [Ver portfolio](https://portfolio-indol-nine-pilm3vpti8.vercel.app/)
